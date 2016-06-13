@@ -1,0 +1,267 @@
+/**
+  Import your scss file to this list to add it to the compiled css file
+  Please keep the structure identical to the project folders
+**/
+/**
+  Import your scss file to this list to add it to the compiled css file
+  Please keep the structure identical to the project folders
+**/
+/* line 1, ../scss/pages/_global.scss */
+body {
+  margin-top: 20px;
+}
+
+/* line 4, ../scss/pages/_global.scss */
+.col-5 {
+  width: 20%;
+}
+
+/* line 3, ../scss/pages/_home.scss */
+.list ul {
+  padding: 0px;
+}
+/* line 6, ../scss/pages/_home.scss */
+.list li {
+  border: 1px solid #e6e9ea !important;
+  border-radius: 7px  !important;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+/* line 13, ../scss/pages/_home.scss */
+.list_header {
+  background-image: -webkit-linear-gradient(to right, #f1f3f5, #fafbfb);
+  background-image: -o-linear-gradient(to right, #f1f3f5, #fafbfb);
+  background-image: -webkit-gradient(to right, #f1f3f5, #fafbfb);
+  background-image: linear-gradient(to right, #f1f3f5, #fafbfb);
+  border-color: transparent !important;
+}
+/* line 20, ../scss/pages/_home.scss */
+.list_item {
+  border-top: 1px solid #e6e9ea !important;
+  border: 1px solid #e6e9ea !important;
+  border-radius: 7px  !important;
+}
+/* line 25, ../scss/pages/_home.scss */
+.list_item_disabled {
+  background-image: -webkit-linear-gradient(to right, #eff1f4, #fff, #fff);
+  background-image: -o-linear-gradient(to right, #eff1f4, #fff, #fff);
+  background-image: -webkit-gradient(to right, #eff1f4, #fff, #fff);
+  background-image: linear-gradient(to right, #eff1f4, #fff, #fff);
+}
+/* line 31, ../scss/pages/_home.scss */
+.list_item_running {
+  background-image: -webkit-linear-gradient(to right, #d9edf7, #fff, #fff);
+  background-image: -o-linear-gradient(to right, #d9edf7, #fff, #fff);
+  background-image: -webkit-gradient(to right, #d9edf7, #fff, #fff);
+  background-image: linear-gradient(to right, #d9edf7, #fff, #fff);
+}
+/* line 37, ../scss/pages/_home.scss */
+.list_item_success {
+  background-image: -webkit-linear-gradient(to right, #ceefd0, #fff, #fff);
+  background-image: -o-linear-gradient(to right, #ceefd0, #fff, #fff);
+  background-image: -webkit-gradient(to right, #ceefd0, #fff, #fff);
+  background-image: linear-gradient(to right, #ceefd0, #fff, #fff);
+}
+/* line 43, ../scss/pages/_home.scss */
+.list_item_fail {
+  background-image: -webkit-linear-gradient(to right, #ffeaea, #fff, #fff);
+  background-image: -o-linear-gradient(to right, #ffeaea, #fff, #fff);
+  background-image: -webkit-gradient(to right, #ffeaea, #fff, #fff);
+  background-image: linear-gradient(to right, #ffeaea, #fff, #fff);
+}
+/* line 50, ../scss/pages/_home.scss */
+.list_progress {
+  margin-bottom: 0px;
+  height: 24px;
+  width: 70px;
+}
+/* line 55, ../scss/pages/_home.scss */
+.list .text-warning {
+  color: #f5cc0f;
+}
+/* line 58, ../scss/pages/_home.scss */
+.list .collapse.in {
+  padding: 20px;
+}
+/* line 61, ../scss/pages/_home.scss */
+.list .icon {
+  margin: 0px 10px;
+}
+
+/* line 2, ../scss/pages/_metrics.scss */
+.metrics_border {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 0px 15px 0 25px;
+  cursor: pointer;
+  height: 200px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+}
+/* line 11, ../scss/pages/_metrics.scss */
+.metrics_border_success {
+  border-color: #5cb85c;
+  background-image: -webkit-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: linear-gradient(145deg, #d8f7da, #fff, #fff);
+}
+/* line 19, ../scss/pages/_metrics.scss */
+.metrics_border_danger {
+  border-color: #d9534f;
+  background-image: -webkit-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: linear-gradient(145deg, #ffeaea, #fff, #fff);
+}
+/* line 27, ../scss/pages/_metrics.scss */
+.metrics_arrow {
+  height: 50px;
+}
+/* line 29, ../scss/pages/_metrics.scss */
+.metrics_arrow_value {
+  padding: 15px 17px;
+  color: #fff;
+  position: absolute;
+}
+/* line 34, ../scss/pages/_metrics.scss */
+.metrics_arrow_decrease {
+  background-image: url("../../assets/img/arrow-decrease.png");
+}
+/* line 37, ../scss/pages/_metrics.scss */
+.metrics_arrow_increase {
+  background-image: url("../../assets/img/arrow-increase.png");
+}
+/* line 40, ../scss/pages/_metrics.scss */
+.metrics_arrow_right {
+  background-image: url("../../assets/img/arrow-right.png");
+}
+
+/* line 2, ../scss/pages/_build.scss */
+.build_border {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 0px 15px 0 25px;
+  cursor: pointer;
+  height: 200px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+}
+/* line 11, ../scss/pages/_build.scss */
+.build_border_success {
+  border-color: #5cb85c;
+  background-image: -webkit-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: linear-gradient(145deg, #d8f7da, #fff, #fff);
+}
+/* line 19, ../scss/pages/_build.scss */
+.build_border_danger {
+  border-color: #d9534f;
+  background-image: -webkit-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: linear-gradient(145deg, #ffeaea, #fff, #fff);
+}
+/* line 27, ../scss/pages/_build.scss */
+.build_pc {
+  height: 70px;
+}
+/* line 30, ../scss/pages/_build.scss */
+.build_time {
+  bottom: 20px;
+  position: absolute;
+}
+
+/* line 2, ../scss/pages/_unitTest.scss */
+.unitTest_border {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 0px 15px 0 25px;
+  cursor: pointer;
+  height: 200px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+}
+/* line 11, ../scss/pages/_unitTest.scss */
+.unitTest_border_success {
+  border-color: #5cb85c;
+  background-image: -webkit-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: linear-gradient(145deg, #d8f7da, #fff, #fff);
+}
+/* line 19, ../scss/pages/_unitTest.scss */
+.unitTest_border_danger {
+  border-color: #d9534f;
+  background-image: -webkit-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: linear-gradient(145deg, #ffeaea, #fff, #fff);
+}
+/* line 27, ../scss/pages/_unitTest.scss */
+.unitTest_chart {
+  top: 40px;
+  left: 20px;
+  position: absolute;
+  height: 50px;
+}
+/* line 33, ../scss/pages/_unitTest.scss */
+.unitTest_percent {
+  margin: 10px 0px 0px 90px;
+}
+/* line 36, ../scss/pages/_unitTest.scss */
+.unitTest_progressbar {
+  background-color: #f46955;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+/* line 2, ../scss/pages/_funcTest.scss */
+.funcTest_border {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 0px 15px 0 25px;
+  cursor: pointer;
+  height: 200px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+}
+/* line 11, ../scss/pages/_funcTest.scss */
+.funcTest_border_success {
+  border-color: #5cb85c;
+  background-image: -webkit-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #d8f7da, #fff, #fff);
+  background-image: linear-gradient(145deg, #d8f7da, #fff, #fff);
+}
+/* line 19, ../scss/pages/_funcTest.scss */
+.funcTest_border_danger {
+  border-color: #d9534f;
+  background-image: -webkit-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -o-linear-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: -webkit-gradient(145deg, #ffeaea, #fff, #fff);
+  background-image: linear-gradient(145deg, #ffeaea, #fff, #fff);
+}
+/* line 27, ../scss/pages/_funcTest.scss */
+.funcTest_chart {
+  top: 40px;
+  left: 20px;
+  position: absolute;
+  height: 50px;
+}
+/* line 33, ../scss/pages/_funcTest.scss */
+.funcTest_percent {
+  margin: 10px 0px 0px 90px;
+}
+/* line 36, ../scss/pages/_funcTest.scss */
+.funcTest_progressbar {
+  background-color: #f46955;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}

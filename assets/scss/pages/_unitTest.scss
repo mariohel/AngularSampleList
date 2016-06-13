@@ -1,0 +1,41 @@
+.unitTest{	
+	&_border{
+		border: 2px solid;
+	    border-radius: 7px;
+	    padding: 0px 15px 0 25px;
+	    cursor: pointer;
+	    height: 200px;
+	    -webkit-box-shadow:2px 2px 5px 0px rgba(30, 30, 30, 0.75); 
+	    -moz-box-shadow:2px 2px 5px 0px rgba(30, 30, 30, 0.75); 	
+		box-shadow:2px 2px 5px 0px rgba(30, 30, 30, 0.75);
+		&_success{
+			border-color:$brand-success;
+			 background-image: -webkit-linear-gradient(145deg, #d8f7da,#fff,#fff);
+	         background-image: -o-linear-gradient(145deg, #d8f7da,#fff,#fff);
+	   	     background-image: -webkit-gradient(145deg, #d8f7da,#fff,#fff);
+	   	     background-image: linear-gradient(145deg, #d8f7da,#fff,#fff);
+			
+		}
+		&_danger{
+			border-color:$brand-danger;
+			 background-image: -webkit-linear-gradient(145deg, #ffeaea,#fff,#fff);
+	         background-image: -o-linear-gradient(145deg, #ffeaea,#fff,#fff);
+	   	     background-image: -webkit-gradient(145deg, #ffeaea,#fff,#fff);
+	   	     background-image: linear-gradient(145deg, #ffeaea,#fff,#fff);
+		}
+	}
+	&_chart{
+	    top: 40px;
+	    left: 20px;
+	    position: absolute;
+	   	height: 50px;
+	}
+	&_percent{
+	    margin: 10px 0px 0px 90px;
+	}
+	&_progressbar{
+	 	background-color: #f46955;   
+    	margin-bottom: 0px;
+    	margin-top: 25px;
+	}
+}

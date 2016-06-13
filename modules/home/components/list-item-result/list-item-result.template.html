@@ -1,0 +1,15 @@
+<div class="text-center">
+	<h5>Result:</h5>
+	<div ng-class="getClass(item.state)" ng-bind-html="getText(item.state) | rawHtml"></div>
+	<button ng-if="item.state=='Accepted'" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Merged Build</button>
+	<button ng-if="item.state=='Rejected'" class="btn btn-primary">Find Issues</button>
+	
+	<div  ng-if="item.state=='Complete'">
+		<button class="btn btn-primary">Deploy</button> to:
+		<select>
+		      <option value="production">Production</option>
+		      <option value="development">Development</option>
+		</select>
+	</div>
+	
+</div>

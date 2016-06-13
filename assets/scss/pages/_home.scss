@@ -1,0 +1,65 @@
+.list{
+	
+	ul{
+	    padding: 0px;
+	}
+	li {
+	    border: 1px solid #e6e9ea !important;
+		border-radius: 7px  !important;
+	    list-style-type: none;
+   		margin: 10px;
+    	padding: 10px;
+	}	
+	&_header {
+		background-image: -webkit-linear-gradient(to right,#f1f3f5,#fafbfb);
+	    background-image: -o-linear-gradient(to right,#f1f3f5,#fafbfb);
+	    background-image: -webkit-gradient(to right,#f1f3f5,#fafbfb);
+	    background-image: linear-gradient(to right,#f1f3f5,#fafbfb);
+	    border-color: transparent !important;
+	}
+	&_item{
+		border-top: 1px solid #e6e9ea !important;
+		border: 1px solid #e6e9ea !important;
+		border-radius: 7px  !important;
+		
+		&_disabled{
+		    background-image: -webkit-linear-gradient(to right, #eff1f4, #fff , #fff);
+            background-image: -o-linear-gradient(to right, #eff1f4, #fff , #fff);
+   			background-image: -webkit-gradient(to right, #eff1f4, #fff , #fff);
+   			background-image: linear-gradient(to right, #eff1f4, #fff , #fff);
+		}
+		&_running{
+		    background-image: -webkit-linear-gradient(to right, #d9edf7, #fff , #fff);
+            background-image: -o-linear-gradient(to right, #d9edf7, #fff , #fff);
+   			background-image: -webkit-gradient(to right, #d9edf7, #fff , #fff);
+   			background-image: linear-gradient(to right, #d9edf7, #fff , #fff);
+		}
+		&_success{
+		    background-image: -webkit-linear-gradient(to right, #ceefd0, #fff , #fff);
+            background-image: -o-linear-gradient(to right, #ceefd0, #fff , #fff);
+   			background-image: -webkit-gradient(to right, #ceefd0, #fff , #fff);
+   			background-image: linear-gradient(to right, #ceefd0, #fff , #fff);
+		}
+		&_fail{
+		    background-image: -webkit-linear-gradient(to right, #ffeaea, #fff , #fff);
+            background-image: -o-linear-gradient(to right, #ffeaea, #fff , #fff);
+   			background-image: -webkit-gradient(to right, #ffeaea, #fff , #fff);
+   			background-image: linear-gradient(to right, #ffeaea, #fff , #fff);
+		}
+	}
+	&_progress{
+	    margin-bottom: 0px;
+	    height:24px;
+	    width:70px;
+	}
+	.text-warning {
+	    color: #f5cc0f;
+	}
+	.collapse.in {
+	    padding: 20px;
+	}
+	.icon{
+	    margin: 0px 10px;
+	}
+	
+}

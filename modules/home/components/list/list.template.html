@@ -1,0 +1,45 @@
+<div class="list">
+	<ul>
+		<li class="list_header">
+			<div class="row">	
+				<div class="col-sm-3">ChangeList / Build</div>
+		        <div class="col-sm-1">Owner</div>
+		        <div class="col-sm-2">Time Started</div>
+		        <div class="col-sm-1">State</div>
+		        <div class="col-sm-1">Metrics</div>
+		        <div class="col-sm-1">Build</div>
+		        <div class="col-sm-1">Unit Test</div>
+		        <div class="col-sm-2">Functional Test</div>	
+			</div>
+		</li>
+		 <li ng-repeat="item in data" class="list_item" ng-class="getStateBackground(item.state)">
+				  	 <div class="row">	
+						<div class="col-sm-3"><p><span class="icon {{(item.type=='firewall')?'ti-layout-grid4':'ti-desktop'}}"></span><a href="#" ng-click="selectIndex($index)">{{item.code}}</a></p></div>
+			            <div class="col-sm-1">{{(item.owner)?item.owner:''}}</div>
+			            <div class="col-sm-2">{{item.start_time}}</div>
+			            <div class="col-sm-1">{{item.state}}</div>
+			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.metrics.result)}}" value="item.metrics.progress"></uib-progressbar></div>
+			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.build.result)}}" value="item.build.progress"></uib-progressbar></div>
+			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.unitTest.result)}}" value="item.unitTest.progress"></uib-progressbar></div>
+			            <div class="col-sm-2"><uib-progressbar  class="list_progress" type="{{getProgress(item.funcTest.result)}}" value="item.funcTest.progress"></uib-progressbar></div>      				
+					 </div>
+					 <div uib-collapse="$index != selectedIndex"  ng-if="item.state!='Pending' && item.state!='Running' "  >
+					  	<div class="row">
+					  		<crossapp-metrics-list-item ng-click="showMetricsDetails=true" class="col-sm-2 col-5" item="item"></crossapp-metrics-list-item>
+	          				<crossapp-metrics-item-detail item="item" visible="showMetricsDetails"></crossapp-metrics-item-detail>
+	          				
+	          				<crossapp-build-list-item ng-click="showBuildDetails=true" class="col-sm-2 col-5" item="item"></crossapp-build-list-item>
+	          				<crossapp-build-item-detail item="item" visible="showBuildDetails"></crossapp-build-item-detail>
+	          				
+	          				<crossapp-unit-test-list-item ng-click="showUnitTestDetails=true" class="col-sm-2 col-5" item="item"></crossapp-unit-test-list-item>
+	          				<crossapp-unit-test-item-detail item="item" visible="showUnitTestDetails"></crossapp-unit-test-item-detail>
+	          				
+	          				<crossapp-func-test-list-item ng-click="showFuncTestDetails=true" class="col-sm-2 col-5" item="item"></crossapp-func-test-list-item>
+	          				<crossapp-func-test-item-detail item="item" visible="showFuncTestDetails"></crossapp-func-test-item-detail>
+	          				
+	          				<crossapp-home-list-item-result class="col-sm-2 col-5" item="item"></crossapp-home-list-item-result>
+	          			</div>
+	          		</div>
+		</li> 
+	</ul>	
+</div>

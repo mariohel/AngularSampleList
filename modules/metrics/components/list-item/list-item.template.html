@@ -1,0 +1,11 @@
+<div ng-class="(item.metrics.result>0)?'metrics_border_success':'metrics_border_danger'" class="metrics metrics_border">
+	<h4  ng-class="(item.metrics.result>0)?'text-success':'text-danger'" >Metrics</h4>
+	<div class="row">
+		<div class="col-xs-5 .col-md-4"><span class="metrics_arrow_value">{{Math.abs(item.metrics.test)}}</span><img class="metrics_arrow" ng-src="assets/img/arrow-{{(item.metrics.test<0)?'decrease.png':'increase.png'}}"><h6>Test</h6></div>	
+		<div class="col-xs-5 .col-md-4"><span class="metrics_arrow_value">{{Math.abs(item.metrics.maintain)}}</span><img class="metrics_arrow" ng-src="assets/img/arrow-{{(item.metrics.maintain<0)?'decrease.png':'increase.png'}}"><h6>Maintainability</h6></div>	
+	</div>
+	<div class="row">
+		<div class="col-xs-5 .col-md-4"><span class="metrics_arrow_value">{{(item.metrics.security)}}</span><img class="metrics_arrow" src="assets/img/arrow-right.png"><h6>Security</h6></div>	
+		<div class="col-xs-5 .col-md-4"><span class="metrics_arrow_value">{{(item.metrics.workmanship)}}</span><img class="metrics_arrow" src="assets/img/arrow-right.png"><h6>Workmanship</h6></div>
+	</div>
+</div>

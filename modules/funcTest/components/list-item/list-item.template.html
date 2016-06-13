@@ -1,0 +1,13 @@
+<div ng-class="(item.funcTest.result>0)?'funcTest_border_success':'funcTest_border_danger'" class="funcTest funcTest_border">
+	<h4  ng-class="(item.funcTest.result>0)?'text-success':'text-danger'" >Functional Test</h4>
+	<div class="funcTest_chart">
+		<canvas id="pie" options="options" class="chart chart-pie chart-xs" height="100" width="100" data="chartData.data" labels="chartData.labels" colours="chartData.colors"></canvas>
+	</div>
+	<div class="funcTest_percent">
+		<h2 ng-class="(item.funcTest.test_passed_percentage>70)?'text-success':(item.funcTest.test_passed_percentage>40)?'text-warning':'text-danger'">{{item.funcTest.test_passed_percentage}}%</h2>
+		<h6>tests passed</h6>
+	</div>
+	<uib-progressbar class="funcTest_progressbar" animate="false" value="item.funcTest.code_covered_percentage" type="success">{{item.funcTest.code_covered_percentage}}%</uib-progressbar>
+   <h6>code covered</h6>
+	
+</div>

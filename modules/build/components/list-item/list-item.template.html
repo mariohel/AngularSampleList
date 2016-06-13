@@ -1,0 +1,10 @@
+<div ng-class="(item.build.result>0)?'build_border_success':'build_border_danger'" class="build build_border">
+	<h4  ng-class="(item.build.result>0)?'text-success':'text-danger'" >Build</h4>
+	<div class="row">
+		<div ng-if="item.build.debug" class="col-xs-6 .col-md-4"><img class="build_pc" ng-src="assets/img/pc.png"><h6>Debug</h6></div>	
+		<div ng-if="item.build.release" class="col-xs-6 .col-md-4"><img class="build_pc" ng-src="assets/img/pc.png"><h6>Release</h6></span></div>		
+	</div>
+	<div class="row build_time">
+		<div class="col-xs-12">{{(item.build.build_time)}}</div>	
+	</div>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="crossApp">
+<!--[if lt IE 7]>      <html lang="en" ng-app="crossApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="crossApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="crossApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="crossApp" class="no-js"> <!--<![endif]-->
+  <head>
+    <base href="/crossOver/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    
+    <title>CrossOver Test</title>
+	
+   	<!-- CSS Files -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "node_modules/bootstrap/dist/css/bootstrap.min.css" -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/jquery-ui/themes/base/jquery-ui.css" -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/font-awesome/**/*min.css" -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/themify-icons/**/*.css" -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/angular-chart.js/dist/**/*min.css" -->	
+	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "assets/**/*.css" -->	
+	  
+	<!-- NODE JS Files -->  	
+	<!-- Auth0 Lock script and AngularJS module -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/jquery/**/jquery.min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/angular/**/*min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/bootstrap/**/*min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/angular-*/**/*min.js" -->
+	
+	<!-- BOWER JS Files -->   
+	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/jquery-ui/jquery-ui.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/angular-bootstrap/**/*ui-bootstrap.min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/angular-bootstrap/**/*tpls.min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/Chart.js/**/*.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/angular-chart.js/dist/**/*min.js" -->
+				
+	<!-- APP JS Files -->   
+	<!-- include:"type": "js", "ordering":"top-down", "files": "app/**/*.module.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "app/**/!(*.module).js" -->
+	
+	<!-- MODULE JS Files -->   
+	<!-- include: "type": "js", "ordering":"top-down", "files": "modules/**/*.module.js" -->
+	<!-- include: "type": "js", "ordering":"top-down", "files": "modules/**/!(*.module).js" -->
+   
+   <style>[ng-cloak] { display: none; }</style>
+</head>
+<body>	
+  <!-- Module Templates -->
+  <div ng-view ></div>  
+</body>
+</html>

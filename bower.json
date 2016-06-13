@@ -1,0 +1,19 @@
+{
+ "name": "CrossOver",
+  "version": "0.0.1",
+  "description": "CrossOver Test",
+  "author": "CrossOver",
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "~1.1.1",
+    "jquery-ui": "~1.11.4"
+  },
+  "devDependencies": {
+    "angular-bootstrap": "^0.14.3",
+    "angular-ui-router":"~0.2.18",
+    "font-awesome": "~4.2.0",
+	"themify-icons": "~0.1.0",
+	"angular-chart.js":"*"
+    
+  }
+}
