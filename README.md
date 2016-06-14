@@ -1,5 +1,9 @@
-# CrossOver Test
+# Angular Chart List Sample
 
+#Demo
+http://freelyweb.com/Demos/AngularChartList/
+
+#install
 Steps to Install the test:<br>
 1. Unzip Code folder
 
@@ -7,7 +11,7 @@ Steps to Install the test:<br>
 
 3. run --> bower install
 
-4. in case you are installing application locally , ie: localhost/crossOver , make sure that base url in root index.html is same as your root application , ie : "/crossOver/" , otherwise , it is as should be "/" which is the root directory of production site.
+4. in case you are installing application locally , ie: localhost/sample , make sure that base url in root index.html is same as your root application , ie : "/sample/" , otherwise , it is as should be "/" which is the root directory of production site.
 
 5. run --> grunt 
 to compile scss files
@@ -60,13 +64,13 @@ grunt sasswatch
 
 # ReWriting URL
 
-to make the rewriting URL works fine locally : ie if your URL is localhost/crossover open .htaccess file and change :
+to make the rewriting URL works fine locally : ie if your URL is localhost/sample open .htaccess file and change :
 
 RewriteBase / 
 
 to : 
 
-RewriteBase /crossover
+RewriteBase /sample
 
 
 
