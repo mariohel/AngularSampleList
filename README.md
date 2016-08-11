@@ -9,6 +9,7 @@ http://freelyweb.com/Demos/AngularChartList/
 2. run --> bower install
 
 3. run --> grunt 
+
 to compile scss files
 
 4. load browser : http://localhost/crossOver
@@ -19,19 +20,21 @@ http://thesassway.com/beginner/getting-started-with-sass-and-compass
 
 To install grunt
 
-for windows
-npm install -g grunt-cli
+for windows:
 
-npm install sass -g
+1. npm install -g grunt-cli
 
-npm install compass -g
+2. npm install sass -g
 
-for apple
-sudo npm install -g grunt-cli
+3. npm install compass -g
 
-sudo gem install sass
+for apple:
 
-sudo gem install compass
+1. sudo npm install -g grunt-cli
+
+2. sudo gem install sass
+
+3. sudo gem install compass
 
 
 To compile sass file at once use below command 
