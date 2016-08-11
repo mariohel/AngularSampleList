@@ -1,7 +1,7 @@
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.home')
-	.factory('crossApp.home.homeService', ['$q','$http',HomeService]);
+	.factory('HomeService', ['$q','$http',HomeService]);
 	
 	function HomeService($q,$http) {	
 		  

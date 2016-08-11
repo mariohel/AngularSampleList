@@ -4,7 +4,7 @@
  * @type {angular.Module}
  */
 
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.common', ['ngSanitize']);
 })();

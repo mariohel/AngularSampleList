@@ -16,6 +16,12 @@
     "grunt-contrib-sass":"*",
     "grunt-contrib-watch":"*",
     "grunt-contrib-compass":"*",
-    "grunt-include-source":"*"
+    "grunt-include-source":"*",
+    "grunt-contrib-jshint":"*",
+    "karma":"*",
+    "grunt-karma":"*",
+   	"karma-jasmine":"*",
+    "karma-phantomjs-launcher":"*"
+    
   }
 }

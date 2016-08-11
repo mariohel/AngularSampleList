@@ -1,6 +1,5 @@
-'use strict';
-
 (function() {
+	'use strict';
 	angular.module('crossApp.home')
 		.directive('crossappHomeListItemResult', [
 		   '$rootScope', 
@@ -53,14 +52,11 @@
           	  switch (state) {
   				case 'Rejected':
   				case 'Fail':
-  	  				return 'text-danger';
-  					break;
+  	  				return 'text-danger';  					
   				case 'Accepted':
-  					return 'text-warning';
-  					break;
+  					return 'text-warning';  					
   				case 'Complete':
   					return 'text-success';
-  					break;
           	  }
           	  	  	
           	  

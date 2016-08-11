@@ -70,7 +70,54 @@ module.exports = function (grunt) {
             'livereload': 9000,
             'sourcemap': false
         }
-      }  
+      },
+      jshint: {
+    	    all: ['Gruntfile.js', 'app/**/*.js', 'modules/**/*.js']
+    	  },
+      concat: {  
+    	  options: {},
+    	  dist: {
+    	    files: {
+    	      'app.js': [
+				'app/**/*.js',
+				'!app/**/*.spec.js',
+				'modules/**/*.js',
+				'!modules/**/*.spec.js'
+    	       ]
+    	    }
+    	  }
+    	},
+      karma: {  
+    	  unit: {
+    	    options: {
+    	      frameworks: ['jasmine'],
+    	      singleRun: false,
+    	      browsers: ['PhantomJS'],
+    	      files: [
+    	        'node_modules/jquery/dist/jquery.min.js',
+    	    	'node_modules/angular/angular.min.js',
+    	    	'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    	    	'node_modules/angular-animate/angular-animate.min.js',
+    	    	'node_modules/angular-route/angular-route.min.js',
+    	    	'node_modules/angular-sanitize/angular-sanitize.min.js',
+    	    	'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    	    	'bower_components/angular-mocks/angular-mocks.js',
+     	        'bower_components/jquery-ui/jquery-ui.js',
+    	    	'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+    	    	'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+    	    	'bower_components/Chart.js/Chart.js',
+    	    	'bower_components/angular-chart.js/dist/angular-chart.min.js',
+    	    	'app/**/*.module.js',
+    	    	'app/**/!(*.module).js',
+    	        'modules/**/*.module.js',
+    	        'modules/**/!(*.module).js',
+    	        
+    	        //include the directory where directive templates are stored.
+    	        'modules/**/*.template.html'
+       	      ]
+    	    }
+    	  }
+    	}
     });
 
     // load tasks
@@ -79,7 +126,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-include-source');
     
+    grunt.loadNpmTasks('grunt-contrib-jshint');    
+    grunt.loadNpmTasks('grunt-karma');  
+    
     // Default task. Prepare for deploy. Use before commit.
     grunt.registerTask('default', ['compass:dev','includeSource']);
+    grunt.registerTask('test', ['jshint','karma']);
     
 };

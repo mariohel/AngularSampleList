@@ -1,17 +1,18 @@
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.home')
-	.controller('crossApp.home.homeController', ['$scope', 'crossApp.home.homeService',HomeController]);
+	.controller('HomeController', ['$scope', 'HomeService',HomeController]);
 	                                    
 	function HomeController($scope, HomeService) {
-	
-		var getDataList = function(){
-			if (!$scope.dataList) {
+		var vm=this;
+		$scope.dataList={};
+		$scope.getDataList = function(){			
 				HomeService.getDataList().then(function (response) {
 					$scope.dataList= response.data;
-				}); 
-			}
+				});			
 		};
-		getDataList();
+		if (!$scope.dataList) 
+			$scope.getDataList();
 	}
+		
 })();
