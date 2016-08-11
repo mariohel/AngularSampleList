@@ -15,7 +15,7 @@
 			if (factory._data)
 				deferred.resolve(factory._data);
 			else{
-				$http.get('db/data.json')
+				$http.get('http://localhost/crossOver/db/data.json')
 				.then(function (data) {
 					factory._data=data;
 					deferred.resolve(data);

@@ -4,15 +4,14 @@
 	.controller('HomeController', ['$scope', 'HomeService',HomeController]);
 	                                    
 	function HomeController($scope, HomeService) {
-		var vm=this;
-		$scope.dataList={};
-		$scope.getDataList = function(){			
+		$scope.dataList=[];
+		$scope.getDataList = function(){
+			if ($scope.dataList.length==0) {
 				HomeService.getDataList().then(function (response) {
 					$scope.dataList= response.data;
-				});			
+				}); 
+			}
 		};
-		if (!$scope.dataList) 
-			$scope.getDataList();
+		$scope.getDataList();
 	}
-		
 })();
