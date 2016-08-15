@@ -3,18 +3,16 @@
 #Demo
 http://freelyweb.com/Demos/AngularChartList/
 
-#install
-Steps to Install the test:<br>
-1. Unzip Code folder
+#Install
+1. run --> npm install
 
-2. run --> npm install
+2. run --> bower install
 
-3. run --> bower install
+3. run --> grunt 
 
-4. in case you are installing application locally , ie: localhost/sample , make sure that base url in root index.html is same as your root application , ie : "/sample/" , otherwise , it is as should be "/" which is the root directory of production site.
-
-5. run --> grunt 
 to compile scss files
+
+4. load browser : http://localhost/crossOver
 
 # To Run sass
 
@@ -22,36 +20,21 @@ http://thesassway.com/beginner/getting-started-with-sass-and-compass
 
 To install grunt
 
-for windows
-1. install ruby
+for windows:
 
-http://rubyinstaller.org/
+1. npm install -g grunt-cli
 
-2. install gem
+2. npm install sass -g
 
-https://rubygems.org/pages/download 
+3. npm install compass -g
 
-	1. Download from above
-	2. Unpack into a directory and cd there
-	3. Install with: ruby setup.rb (you may need admin/root privilege)
-	4. or just click setup file to install
+for apple:
 
-3. run these commands
+1. sudo npm install -g grunt-cli
 
-gem install compass
+2. sudo gem install sass
 
-npm install -g grunt-cli
-
-npm install sass -g
-
-npm install compass -g
-
-for apple
-sudo npm install -g grunt-cli
-
-sudo gem install sass
-
-sudo gem install compass
+3. sudo gem install compass
 
 
 To compile sass file at once use below command 
@@ -62,15 +45,6 @@ To start watcher to watch the changes in the scss and recompile them use below c
 
 grunt sasswatch
 
-# ReWriting URL
 
-to make the rewriting URL works fine locally : ie if your URL is localhost/sample open .htaccess file and change :
-
-RewriteBase / 
-
-to : 
-
-RewriteBase /sample
-
-
-
+#test
+grunt test

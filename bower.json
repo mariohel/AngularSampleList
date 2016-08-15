@@ -1,5 +1,5 @@
 {
- "name": "CrossOver",
+ "name": "crossover",
   "version": "0.0.1",
   "description": "CrossOver Test",
   "author": "CrossOver",
@@ -13,7 +13,8 @@
     "angular-ui-router":"~0.2.18",
     "font-awesome": "~4.2.0",
 	"themify-icons": "~0.1.0",
-	"angular-chart.js":"*"
+	"angular-chart.js":"*",
+    "angular-mocks":"*"
     
   }
 }

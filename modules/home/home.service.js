@@ -1,7 +1,7 @@
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.home')
-	.factory('crossApp.home.homeService', ['$q','$http',HomeService]);
+	.factory('HomeService', ['$q','$http',HomeService]);
 	
 	function HomeService($q,$http) {	
 		  
@@ -15,7 +15,7 @@
 			if (factory._data)
 				deferred.resolve(factory._data);
 			else{
-				$http.get('db/data.json')
+				$http.get('http://localhost/crossOver/db/data.json')
 				.then(function (data) {
 					factory._data=data;
 					deferred.resolve(data);

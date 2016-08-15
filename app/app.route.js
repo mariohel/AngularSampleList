@@ -2,8 +2,8 @@
  * The main Route  
  * 
  */
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp')
 	.config(['$routeProvider','$locationProvider',RouteConfig]);
 	

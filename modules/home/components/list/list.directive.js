@@ -1,6 +1,5 @@
-'use strict';
-
 (function() {
+	'use strict';
 	angular.module('crossApp.home')
 		.directive('crossappHomeList', [
 			'$rootScope', 
@@ -46,19 +45,14 @@
         	  switch (state) {
 				case 'Running':
 					return 'list_item_running';
-					break;
 				case 'Rejected':
 				case 'Fail':
 					return 'list_item_fail';
-					break;
 				case 'Accepted':
 				case 'Complete':
 					return 'list_item_success';
-					break;
-				case 'Pending':
 				default:
 					return 'list_item_disabled';
-					break;
         	  }
         	  	  	
         	  

@@ -5,8 +5,8 @@
  */
 
 
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.common')
 	.filter('rawHtml', ['$sce', function($sce){
 	  return function(val) {

@@ -1,5 +1,5 @@
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp.common')
 	.directive('crossappModal', function(){
 	        return {
@@ -18,7 +18,7 @@
 	                
 	                scope.$watch(function(){return scope.visible;}, function(value){
 	                    
-	                    if(value == true){
+	                    if(value === true){
 	                        $(element).modal('show');
 	                    }else{
 	                        $(element).modal('hide');

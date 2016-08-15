@@ -4,8 +4,8 @@
  * @type {angular.Module}
  */
 
-'use strict';
 (function () { 
+	'use strict';
 	angular.module('crossApp', [
 	                            'ngRoute',
 	                            'ui.bootstrap', 

@@ -1,6 +1,5 @@
-'use strict';
-
 (function() {
+	'use strict';
 	angular.module('crossApp.unitTest')
 		.directive('crossappUnitTestListItem', [
 		   UnitTestListItemDirective
