@@ -14,7 +14,7 @@
 		</li>
 		 <li ng-repeat="item in data" class="list_item" ng-class="getStateBackground(item.state)">
 				  	 <div class="row">	
-						<div class="col-sm-3"><p><span class="icon {{(item.type=='firewall')?'ti-layout-grid4':'ti-desktop'}}"></span><a href="#" ng-click="selectIndex($index)">{{item.code}}</a></p></div>
+						<div class="col-sm-3"><p><span class="icon {{(item.type=='firewall')?'ti-layout-grid4':'ti-desktop'}}"></span><a ng-if="item.state!='Pending' && item.state!='Running' " href="#" ng-click="selectIndex($index)">{{item.code}}</a><span  ng-if="item.state=='Pending' || item.state=='Running' ">{{item.code}}</span></span> </p></div>
 			            <div class="col-sm-1">{{(item.owner)?item.owner:''}}</div>
 			            <div class="col-sm-2">{{item.start_time}}</div>
 			            <div class="col-sm-1">{{item.state}}</div>

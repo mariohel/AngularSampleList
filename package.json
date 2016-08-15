@@ -4,24 +4,33 @@
   "description": "CrossOver Test",
   "author": "CrossOver",
   "private": true,
+  "keywords": [
+    "angular",
+    "node",
+    "express",
+    "mongodb",
+    "MeanStack"
+  ],
   "dependencies": {
     "angular": "~1.4.9",
-    "angular-animate":"~1.4.9",
+    "angular-animate": "~1.4.9",
     "angular-route": "~1.4.9",
-    "angular-ui-router":"~0.2.18",
-    "angular-sanitize" : "^1.4.0",  
-    "bootstrap":"~3.3.6",
+    "angular-sanitize": "^1.4.0",
+    "angular-ui-router": "~0.2.18",
+    "body-parser": "^1.15.2",
+    "bootstrap": "~3.3.6",
+    "express": "^4.14.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-include-source": "*",
+    "grunt-karma": "*",
     "jquery": "~2.1.4",
-    "grunt":"~0.4.5",
-    "grunt-contrib-sass":"*",
-    "grunt-contrib-watch":"*",
-    "grunt-contrib-compass":"*",
-    "grunt-include-source":"*",
-    "grunt-contrib-jshint":"*",
-    "karma":"*",
-    "grunt-karma":"*",
-   	"karma-jasmine":"*",
-    "karma-phantomjs-launcher":"*"
-    
+    "karma": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "mongojs": "^2.4.0"
   }
 }
