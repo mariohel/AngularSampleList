@@ -6,7 +6,8 @@
 	function HomeService($q,$http) {	
 		  
 		var factory = {};		
-		factory._data = null;		
+		factory._data = null;
+		factory.url="http://localhost:3000/crossover/";
 
 		factory.getDataList = function () {
 			
@@ -15,7 +16,7 @@
 			if (factory._data)
 				deferred.resolve(factory._data);
 			else{
-				$http.get('http://localhost:3000/crossover')
+				$http.get(factory.url)
 				.then(function (data) {
 					factory._data=data;
 					deferred.resolve(data);
@@ -35,7 +36,7 @@
 			
 			var deferred = $q.defer();
 			
-			$http.post('http://localhost:3000/crossover',item)
+			$http.post(factory.url,item)
 				.then(function (data) {
 					deferred.resolve(data);
 				})
@@ -54,7 +55,7 @@
 			
 			var deferred = $q.defer();
 			
-			$http.delete('http://localhost:3000/crossover/'+id)
+			$http.delete(factory.url+id)
 				.then(function (data) {
 					deferred.resolve(data);
 				})
