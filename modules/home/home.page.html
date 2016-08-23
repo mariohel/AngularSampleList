@@ -1,3 +1,96 @@
-<div class="container">
-	<crossapp-home-list data="dataList"></crossapp-home-list>
+<md-toolbar class="md-primary md-hue-1">
+     	<div class="md-toolbar-tools">
+        <h1 class="md-toolbar-tools">Angular Material MeanStack Chart List</h1>
+        <md-button class="md-icon-button" aria-label="playlist_add"  ng-click="toggleLeft()" >
+        	<md-icon class="material-icons md-light md-48"> playlist_add </md-icon>
+        </md-button>
+       </div>     
+     </md-toolbar>
+
+<div class="container" layout="row" flex>
+	<md-sidenav class="md-sidenav-left" md-component-id="left"
+                md-disable-backdrop md-whiteframe="5">     
+      <md-content layout-margin>
+        <md-card>
+        	<md-card-header layout="row" layout-align="space-between start" >
+	           <md-card-header-text>
+            		<span class="md-title">Add Item</span>
+          		</md-card-header-text>
+          	   <md-card-actions layout="row" layout-align="end start">	        
+			          <md-icon  ng-click="toggleLeft()" > close </md-icon>
+	        	</md-card-actions>	    
+	        </md-card-header>      
+         	  	        
+	        <md-card-content>
+	        <form name="itemForm">	        
+	          <md-content layout="column">
+			      <md-input-container>
+			        <label>Code</label>
+			        <input ng-model="item.code" ng-required="true">
+			      </md-input-container>
+			      <md-input-container>
+			        <label>Owner</label>
+			        <input ng-model="item.owner" ng-required="true">
+			      </md-input-container>
+			       <md-input-container>
+			        <label layout-padding>Type</label>
+			        <md-select name="typeSelect" ng-model="item.type" ng-required="true">
+			            <md-option>firewall</md-option>
+			            <md-option>build</md-option>	           
+			         </md-select>
+			      </md-input-container>
+			       <md-input-container>
+			        <label  layout-padding>State</label>
+			        <md-select ng-model="item.state" ng-required="true">
+			            <md-option>Pending</md-option>
+			            <md-option>Running</md-option>
+			            <md-option>Rejected</md-option>
+			            <md-option>Complete</md-option>
+			            <md-option>Accepted</md-option>			           
+			         </md-select>
+			      </md-input-container>
+			      <md-input-container>
+			      <label>Metrics</label>
+			      <div flex layout layout-padding layout-align="center center">
+			        <md-slider flex ng-model="item.metrics" min="0" max="100" aria-label="blue" id="metrics-slider" class="md-primary">
+				     </md-slider>				     
+				      {{item.metrics}}	
+			      </div>	  	  
+    				</md-input-container>
+				  <md-input-container>
+				     <label>Build</label>
+				     <div flex layout layout-padding layout-align="center center">
+			      		<md-slider flex ng-model="item.build" min="0" max="100" aria-label="blue" id="build-slider" class="md-primary">
+				     	</md-slider>				     
+				     {{item.build}}
+				     </div> 	  
+    				</md-input-container>
+				   <md-input-container>
+				     <label>Unit Test</label>
+				     <div flex layout layout-padding  layout-align="center center">
+				     <md-slider flex ng-model="item.unitTest" min="0" max="100" aria-label="blue" id="unitTest-slider" class="md-primary">
+				     </md-slider>				     
+				     {{item.unitTest}}	
+				     </div>		      
+    				</md-input-container>
+				   <md-input-container>
+				   <label>Functional Test</label>
+				   <div flex layout layout-padding layout-align="center center">
+			        <md-slider flex ng-model="item.funcTest" min="0" max="100" aria-label="blue" id="funcTest-slider" class="md-primary">
+				     </md-slider>
+				      {{item.funcTest}}		
+			      </div>				     	  	 
+    				</md-input-container>
+			  </md-content>
+			  </form>
+	        </md-card-content>	  
+	         <md-card-actions layout="row" layout-align="end center">	        
+		          	<md-button ng-disabled ="ng-pristine || itemForm.$invalid" class="md-icon-button" aria-label="add" ng-click="addItem(itemForm)" >Add </md-button>
+	        </md-card-actions>	        
+	      </md-card>       
+      </md-content>
+    </md-sidenav>	
+	<md-content flex>	
+		<crossapp-home-list data="dataList"></crossapp-home-list>
+	</md-content>
 </div>

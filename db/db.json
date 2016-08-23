@@ -1,72 +1,4 @@
-[
-    {
-        "code" : "Tenrox-R1_1235", 
-        "type":"build",
-        "start_time" : "",
-        "state" : "Pending",
-        "metrics" : {
-            "progress":0,
-            "test":0,
-            "maintain":0,
-            "security":0,
-            "workmanship":0            
-        },
-        "build" : {
-        	"progress":0 ,
-        	"build_time":"",
-        	"debug":false,
-        	"release":false
-       	}, 
-        "unitTest" : {
-        	"progress":0,
-        	"tests_success":0,
-        	"tests_fail":0,
-        	"test_passed_percentage":0,
-        	"code_covered_percentage":0
-        },
-        "funcTest" :{ 
-        	"progress":0,
-        	"tests_success":0,
-        	"tests_fail":0,
-        	"test_passed_percentage":0,
-        	"code_covered_percentage":0
-		}
-	},
-	    {
-        "code" : "432462", 
-        "type":"firewall",
-        "owner" : "jtuck",
-        "start_time" : "4/18/2014 12:12pm",
-        "state" : "Running",
-        "metrics" : {
-            "progress":60,
-            "result":0,
-            "test":64,
-            "maintain":53,
-            "security":64,
-            "workmanship":72            
-        },
-        "build" : {
-        	"progress":0 ,
-        	"build_time":"",
-        	"debug":false,
-        	"release":false
-       	}, 
-        "unitTest" : {
-        	"progress":0,
-        	"chart_data":[],
-        	"test_passed_percentage":0,
-        	"code_covered_percentage":0
-        },
-        "funcTest" :{ 
-        	"progress":0,
-        	"tests_success":0,
-        	"tests_fail":0,
-        	"test_passed_percentage":0,
-        	"code_covered_percentage":0
-		}
-	},
-	    {
+{
         "code" : "432461", 
         "type":"firewall",
         "owner" : "samy",
@@ -101,8 +33,8 @@
         	"test_passed_percentage":68,
         	"code_covered_percentage":23
 		}
-	},
-	    {
+	}
+{
         "code" : "Tenrox-R1_1234", 
         "type":"build",
         "start_time" : "4/18/2014 12:12pm",
@@ -136,8 +68,75 @@
         	"test_passed_percentage":68,
         	"code_covered_percentage":23
 		}
-	},
-	    {
+	}
+{
+        "code" : "Tenrox-R1_1235", 
+        "type":"build",
+        "start_time" : "",
+        "state" : "Pending",
+        "metrics" : {
+            "progress":0,
+            "test":0,
+            "maintain":0,
+            "security":0,
+            "workmanship":0            
+        },
+        "build" : {
+        	"progress":0 ,
+        	"build_time":"",
+        	"debug":false,
+        	"release":false
+       	}, 
+        "unitTest" : {
+        	"progress":0,
+        	"tests_success":0,
+        	"tests_fail":0,
+        	"test_passed_percentage":0,
+        	"code_covered_percentage":0
+        },
+        "funcTest" :{ 
+        	"progress":0,
+        	"tests_success":0,
+        	"tests_fail":0,
+        	"test_passed_percentage":0,
+        	"code_covered_percentage":0
+		}
+	}
+{
+        "code" : "432462", 
+        "type":"firewall",
+        "owner" : "jtuck",
+        "start_time" : "4/18/2014 12:12pm",
+        "state" : "Running",
+        "metrics" : {
+            "progress":60,
+            "result":0,
+            "test":64,
+            "maintain":53,
+            "security":64,
+            "workmanship":72            
+        },
+        "build" : {
+        	"progress":0 ,
+        	"build_time":"",
+        	"debug":false,
+        	"release":false
+       	}, 
+        "unitTest" : {
+        	"progress":0,
+        	"chart_data":[],
+        	"test_passed_percentage":0,
+        	"code_covered_percentage":0
+        },
+        "funcTest" :{ 
+        	"progress":0,
+        	"tests_success":0,
+        	"tests_fail":0,
+        	"test_passed_percentage":0,
+        	"code_covered_percentage":0
+		}
+	}
+{
         "code" : "432460", 
         "type":"firewall",
         "owner" : "samy",
@@ -169,8 +168,8 @@
         	"test_passed_percentage":0,
         	"code_covered_percentage":0
 		}
-	},
-	    {
+	}
+{
         "code" : "432459", 
         "type":"firewall",
         "owner" : "samy",
@@ -207,4 +206,3 @@
         	"code_covered_percentage":23
 		}
 	}
-]

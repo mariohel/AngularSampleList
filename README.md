@@ -1,4 +1,5 @@
 # Angular Chart List Sample - MEAN STACK APPLICATION
+Developed Sample Angular Charts List MEAN Stack application with unit testing using HTML5 ,JavaScript ,CSS3,  JQuery , SASS, compress, Angular, Angular Material,  MongoDB, Express, Node, Bootstrap, Karma, jshint, jasmine, phantomjs, grunt.
 
 #Demo
 http://freelyweb.com/Demos/AngularChartList/
@@ -33,7 +34,7 @@ https://docs.mongodb.com/manual/installation/
 mongod --dbpath MongoDB\data\db
 
 3. Import database file to your MongoDB :
-mongoimport --db crossover --collection crossover --drop db/data.json
+mongoimport --db crossover --collection crossover --drop db/db.json
 
 
 #Install

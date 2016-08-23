@@ -15,11 +15,13 @@
 	
    	<!-- CSS Files -->	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "node_modules/bootstrap/dist/css/bootstrap.min.css" -->	
+	<!-- include:"type": "css", "ordering":"top-down", "files": "node_modules/angular-material/angular-material.min.css" -->	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/jquery-ui/themes/base/jquery-ui.css" -->	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/font-awesome/**/*min.css" -->	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/themify-icons/**/*.css" -->	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "bower_components/angular-chart.js/dist/**/*min.css" -->	
 	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">	
 	<!-- include:"type": "css", "ordering":"top-down", "files": "assets/**/*.css" -->	
 	  
 	<!-- NODE JS Files -->  	
@@ -27,7 +29,7 @@
 	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/jquery/**/jquery.min.js" -->
 	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/angular/**/*min.js" -->
 	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/bootstrap/**/*min.js" -->
-	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/angular-*/**/*min.js" -->
+	<!-- include:"type": "js", "ordering":"top-down", "files": "node_modules/angular-*/**/angular-*.min.js" -->
 	
 	<!-- BOWER JS Files -->   
 	<!-- include:"type": "js", "ordering":"top-down", "files": "bower_components/jquery-ui/jquery-ui.js" -->
@@ -47,7 +49,6 @@
    <style>[ng-cloak] { display: none; }</style>
 </head>
 <body>	
-  <!-- Module Templates -->
-  <div ng-view ></div>  
+  <div ng-view layout="column" ></div>  
 </body>
 </html>

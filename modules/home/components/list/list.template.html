@@ -21,7 +21,12 @@
 			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.metrics.result)}}" value="item.metrics.progress"></uib-progressbar></div>
 			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.build.result)}}" value="item.build.progress"></uib-progressbar></div>
 			            <div class="col-sm-1"><uib-progressbar  class="list_progress"  type="{{getProgress(item.unitTest.result)}}" value="item.unitTest.progress"></uib-progressbar></div>
-			            <div class="col-sm-2"><uib-progressbar  class="list_progress" type="{{getProgress(item.funcTest.result)}}" value="item.funcTest.progress"></uib-progressbar></div>      				
+			            <div class="col-sm-2" class="row">
+			            	<div class="col-sm-7">
+			           			<uib-progressbar class="list_progress" type="{{getProgress(item.funcTest.result)}}" value="item.funcTest.progress"></uib-progressbar>
+				            </div>
+				            <md-icon class="col-sm-5" ng-if="item.deletable" ng-click="deleteItem(item)" > close </md-icon>
+			            </div>      				
 					 </div>
 					 <div uib-collapse="$index != selectedIndex"  ng-if="item.state!='Pending' && item.state!='Running' "  >
 					  	<div class="row">
@@ -38,6 +43,8 @@
 	          				<crossapp-func-test-item-detail item="item" visible="showFuncTestDetails"></crossapp-func-test-item-detail>
 	          				
 	          				<crossapp-home-list-item-result class="col-sm-2 col-5" item="item"></crossapp-home-list-item-result>
+	          				
+				        	
 	          			</div>
 	          		</div>
 		</li> 

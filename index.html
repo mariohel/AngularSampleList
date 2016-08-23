@@ -15,12 +15,14 @@
 	
    	<!-- CSS Files -->	
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<link href="node_modules/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">	
 	<link href="bower_components/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">	
 	<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">	
 	<link href="bower_components/themify-icons/css/themify-icons.css" rel="stylesheet" type="text/css">
 	<link href="bower_components/themify-icons/ie7/ie7.css" rel="stylesheet" type="text/css">	
 	<link href="bower_components/angular-chart.js/dist/angular-chart.min.css" rel="stylesheet" type="text/css">	
 	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">	
 	<link href="assets/css/stylesScss.css" rel="stylesheet" type="text/css">	
 	  
 	<!-- NODE JS Files -->  	
@@ -29,6 +31,8 @@
 	<script src="node_modules/angular/angular.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+	<script src="node_modules/angular-material/angular-material.min.js"></script>
 	<script src="node_modules/angular-route/angular-route.min.js"></script>
 	<script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -53,24 +57,29 @@
 	<script src="modules/unitTest/unitTest.module.js"></script>
 	<script src="modules/build/components/item-detail/item-detail.directive.js"></script>
 	<script src="modules/build/components/list-item/list-item.directive.js"></script>
+	<script src="modules/build/components/list-item/list-item.directive.spec.js"></script>
 	<script src="modules/common/directives/modal.directive.js"></script>
 	<script src="modules/common/filters/rawHtml.filter.js"></script>
 	<script src="modules/funcTest/components/item-detail/item-detail.directive.js"></script>
 	<script src="modules/funcTest/components/list-item/list-item.directive.js"></script>
+	<script src="modules/funcTest/components/list-item/list-item.directive.spec.js"></script>
 	<script src="modules/home/home.controller.js"></script>
+	<script src="modules/home/home.controller.spec.js"></script>
 	<script src="modules/home/home.route.js"></script>
 	<script src="modules/home/home.service.js"></script>
 	<script src="modules/home/components/list-item-result/list-item-result.directive.js"></script>
+	<script src="modules/home/components/list-item-result/list-item-result.directive.spec.js"></script>
 	<script src="modules/home/components/list/list.directive.js"></script>
 	<script src="modules/metrics/components/item-detail/item-detail.directive.js"></script>
 	<script src="modules/metrics/components/list-item/list-item.directive.js"></script>
+	<script src="modules/metrics/components/list-item/list-item.directive.spec.js"></script>
 	<script src="modules/unitTest/components/item-detail/item-detail.directive.js"></script>
 	<script src="modules/unitTest/components/list-item/list-item.directive.js"></script>
+	<script src="modules/unitTest/components/list-item/list-item.directive.spec.js"></script>
    
    <style>[ng-cloak] { display: none; }</style>
 </head>
 <body>	
-  <!-- Module Templates -->
-  <div ng-view ></div>  
+  <div ng-view layout="column" ></div>  
 </body>
 </html>

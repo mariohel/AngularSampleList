@@ -68,7 +68,6 @@ app.get('/crossover/:id', function (req, res) {
 
 app.put('/crossover/:id', function (req, res) {
   var id = req.params.id;
-  console.log(req.body.name);
   db.crossover.findAndModify({
     query: {_id: mongojs.ObjectId(id)},
     update: {$set: {type: req.body.type, code: req.body.code, state: req.body.state}},
